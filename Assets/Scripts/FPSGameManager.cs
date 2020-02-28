@@ -23,7 +23,7 @@ public class FPSGameManager : MonoBehaviour{
         //DontDestroyOnLoad(gameObject);
 		anim = scoreValue.GetComponent<Animator>();
 		
-		 if (_instance != null && _instance != this){
+		if (_instance != null && _instance != this){
             Destroy(this.gameObject);
         } else {
             _instance = this;
